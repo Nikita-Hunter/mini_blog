@@ -23,7 +23,15 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+ul,
+ol,
+menu {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;
