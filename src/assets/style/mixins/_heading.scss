@@ -1,0 +1,52 @@
+@mixin h1($color: $black, $align: left){
+    color: $color;
+    font-size: $text-2xl;
+    text-align: $align;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin h2($color: $black, $align: left){
+    color: $color;
+    font-size: $text-xl;
+    text-align: $align;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin h3($color: $black, $align: left){
+    color: $color;
+    font-size: $text-lg;
+    text-align: $align;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin h4($color: $black, $align: left){
+    color: $color;
+    font-size: $text-md;
+    text-align: $align;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin h5($color: $black, $align: left){
+    color: $color;
+    font-size: $text-sm;
+    text-align: $align;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin h6($color: $black, $align: left){
+    color: $color;
+    font-size: $text-xs;
+    text-align: $align;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: default;
+}
+@mixin flex-block{
+    display: flex;
+    flex-wrap: wrap;
+}

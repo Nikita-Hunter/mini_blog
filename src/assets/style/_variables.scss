@@ -1,0 +1,57 @@
+// start color settings
+$blue: #0000ff;
+$white: #ffffff;
+$black: #010101;
+$gray: #c4c4c4;
+
+$colors : (
+    "white" : $white,
+    "black" : $black,
+    "blue"  : $blue,
+    "gray"  : $gray,
+);
+// end colors settings
+
+
+// start heading settings
+$base: 16px;
+$text-xs: 20px;
+$text-sm: 24px;
+$text-md: 36px;
+$text-lg: 48px;
+$text-xl: 64px;
+$text-2xl: 72px;
+
+$heading-size : (
+    "xs"  : $text-xs,
+    "sm"  : $text-sm,
+    "md"  : $text-md,
+    "lg"  : $text-lg,
+    "xl"  : $text-xl,
+    "2xl" : $text-2xl,
+);
+// end heading settings
+// font family application
+$fonts-application: 'Inter', sans-serif;
+
+// container settings
+$content: 1440px;
+$container-px: 15px;
+$container: $content;
+
+
+
+// function build root-css
+// example:
+:root {
+    // for using root-css colors add prefix "--color-[name-color]", 
+    // for example --color-blue
+    @each $key, $value in $colors {
+        --color-#{$key} : #{$value};
+    }
+    // for using root-css heading size, add prefix "--heading-[name-heading]", 
+    // for example --heading-md
+    @each $key, $value in $heading-size {
+        --heading-#{$key} : #{$value};
+    }
+}

@@ -1,0 +1,3 @@
+@mixin button($bg: $blue, $text-size: $base) {
+    background-color: $bg;
+}

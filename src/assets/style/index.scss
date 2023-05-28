@@ -1,0 +1,10 @@
+// main file for config and components style
+// import config-files
+@import "./variables";
+@import "./mixins";
+@import "./rebot";
+@import "./fonts";
+// import components and layout files
+@import "./custom";
+@import "./components";
+@import "./vendor";

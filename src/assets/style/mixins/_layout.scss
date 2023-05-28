@@ -1,0 +1,12 @@
+@mixin d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin d-grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+@mixin link-reset {
+    text-decoration: none;
+    color: inherit;
+}
