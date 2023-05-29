@@ -1,0 +1,166 @@
+.header {
+    width: 100%;
+    padding-top: 50px;
+    min-height: 463px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__container {
+    }
+
+    // .header__inner
+
+    &__inner {
+        @include d-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__navbar
+
+    &__navbar {
+    }
+
+    // .header__actions
+
+    &__actions {
+        @include d-flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    // .header__actions-item
+
+    &__actions-item {
+        &:nth-child(1) {
+            .header__actions-link {
+                @include button;
+            }
+        }
+        &:nth-child(2) {
+            .header__actions-link {
+                @include button($blue);
+            }
+        }
+    }
+
+    // .header__actions-link
+
+    &__actions-link {
+    }
+}
+.logo {
+    @include d-flex;
+    align-items: center;
+    gap: 3px;
+    &__brand {
+    }
+
+    // .logo__span
+
+    &__span {
+        color: $white;
+        font-size: $text-sm;
+        font-weight: 500;
+    }
+}
+.navbar {
+
+    // .navbar__menu
+
+    &__menu {
+        @include d-flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    // .navbar__menu-item
+
+    &__menu-item {
+    }
+
+    // .navbar__menu-link
+
+    &__menu-link {
+        color: rgba($white, .8);
+        font-weight: 500;
+        transition: color .25s;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+.hover-drop {
+    // .hover-drop__span
+    position: relative;
+    &:hover {
+        .hover-drop__list {
+            visibility: visible;
+            top: 100%;
+            opacity: 1;
+        }
+        .hover-drop__span {
+            background-color: rgba($white,.3);
+        }
+    }
+    &__span {
+        padding: 8px 18px;
+        background-color: rgba($white,.1);
+        color: $white;
+        font-weight: 500;
+        @include d-flex;
+        align-items: center;
+        gap: 5px;
+        border-radius: 50px;
+        transition: background .25s;
+        i {
+            color: $blue;
+            font-size: 22px;
+        }
+    }
+
+    // .hover-drop__list
+
+    &__list {
+        margin-top: 5px;
+        display: block;
+        position: absolute;
+        top: calc(100% + 5px);
+        width: 100%;
+        background-color: rgba($white,.1);
+        padding: 4px 8px;
+        border-radius: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .25s;
+    }
+
+    // .hover-drop__list-item
+
+    &__list-item {
+    }
+
+    // .hover-drop__list-value
+
+    &__list-value {
+        color: rgba($white, .7);
+        font-size: 16px;
+        font-weight: 500;
+        transition: color .25s;
+        &:hover {
+            color: $white;
+        }
+        &:active {
+            color: $blue;
+        }
+    }
+}
+.bx {
+}
+.bx-chevron-down {
+}

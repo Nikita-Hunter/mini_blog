@@ -1,24 +1,34 @@
 // start color settings
 $white: #ffffff;
-$black: #010101;
-
+$secondary: #F9F9F9;
+$gray: rgba(#000000, .4);
+$black: #000000;
+$darken: #06001D;
+$indigo: #9610FF;
+$violet: #5B41F5;
+$blue: #456AE7;
 $colors : (
     "white" : $white,
     "black" : $black,
+    "gray"  : $gray,
+    "darken": $darken,
+    "indigo": $indigo,
+    "blue"  : $blue,
+    "violet": $violet,
 );
 // end colors settings
 
-
 // start heading settings
-$base: 16px;
-$text-xs: 20px;
-$text-sm: 24px;
+$base: 14px;
+$text-xs: 18px;
+$text-sm: 25px;
 $text-md: 36px;
 $text-lg: 48px;
 $text-xl: 64px;
-$text-2xl: 72px;
+$text-2xl: 96px;
 
 $heading-size : (
+    "base": $base,
     "xs"  : $text-xs,
     "sm"  : $text-sm,
     "md"  : $text-md,
@@ -28,12 +38,12 @@ $heading-size : (
 );
 // end heading settings
 // font family application
-$fonts-application: 'Inter', sans-serif;
+$fonts-application: 'Mazzard', sans-serif;
 
 // container settings
-$content: 1440px;
+$content: 1140px;
 $container-px: 15px;
-$container: $content;
+$container: calc($content + ($container-px * 2));
 
 
 

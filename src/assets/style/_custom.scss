@@ -1,14 +1,14 @@
 html {
     width: 100vw;
     overflow-x: hidden;
-    background-color: $white;
+    background-color: $secondary;
 }
 body {
     width: 100vw;
     font-size: $base;
-    line-height: 1.5;
+    line-height: 1.55;
     font-family: $fonts-application;
-    background-color: $white;
+    background-color: $secondary;
     color: $black;
 }
 .container {
@@ -16,5 +16,4 @@ body {
     max-width: $container;
     padding: 0 $container-px;
     margin: 0 auto;
-    border: 1px solid red;
 }
