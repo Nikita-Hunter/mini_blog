@@ -1,0 +1,21 @@
+.breadcums {
+    @include d-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    &__item {
+
+    }
+    &__link {
+        color: $white;
+        font-weight: 500;
+        &--current {
+            color: $blue;
+            text-decoration: underline;
+        }
+    }
+    &__arrow {
+        color: $blue;
+        font-size: 12px;
+    }
+}

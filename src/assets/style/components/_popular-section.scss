@@ -1,0 +1,17 @@
+.popular-section {
+    padding: 30px 0 90px 0;
+    width: 100%;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 367px;
+        grid-template-rows: 196px;
+        grid-auto-flow: dense;
+        gap: 20px;
+    }
+    &__slider {
+        grid-row: 2 span;
+    }
+    &__article {
+        height: 196px;
+    }
+}
