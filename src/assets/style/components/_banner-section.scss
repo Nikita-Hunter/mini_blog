@@ -1,0 +1,49 @@
+.banner-section {
+    width: 100%;
+    background-color: #3C3588;
+    padding: 50px 40px;
+    border-radius: 10px;
+    &__inner {
+        position: relative;
+        @include d-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content {
+        &-title {
+            color: rgba($white,.2);
+            font-size: 128px;
+            line-height: 1.05;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: relative;
+            &::before {
+                content: attr(data-text);
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                color: transparent;
+                font-size: 128px;
+                line-height: 1.05;
+                text-transform: uppercase;
+                font-weight: 600;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $white;
+            }
+        }
+        &-subtitle {
+            color: $white;
+            margin-left: 65px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 1.05;
+        }
+    }
+    &__image {
+        position: absolute;
+        right: 25px;
+        top: 50px;
+        transform: translateY(-50%);
+    }
+}

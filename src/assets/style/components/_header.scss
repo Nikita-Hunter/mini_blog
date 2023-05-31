@@ -1,4 +1,8 @@
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding-top: 50px;
     min-height: 463px;
@@ -14,6 +18,8 @@
         @include d-flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 20;
+        position: relative;
     }
 
     // .header__logo
@@ -96,8 +102,10 @@
     }
 }
 .hover-drop {
-    // .hover-drop__span
     position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     &:hover {
         .hover-drop__list {
             visibility: visible;
@@ -143,6 +151,7 @@
     // .hover-drop__list-item
 
     &__list-item {
+        text-align: left;
     }
 
     // .hover-drop__list-value
